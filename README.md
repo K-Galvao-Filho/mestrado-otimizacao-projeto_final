@@ -41,13 +41,16 @@ pip install numpy pandas matplotlib pulp
 2. Execute o script principal:
 
 ```bash
-python simulacao_alocacao.py
+python app.py
 ```
 
 3. Os resultados serão mostrados no terminal e gráficos comparativos serão exibidos.
 
-4. Arquivos CSV com a alocação dos cenários 2 e 3 são gerados automaticamente:
-
+4. Arquivos CSV com a alocação dos cenários 1, 2 e 3 são gerados automaticamente:
+- `demanda_cenario1.csv`
+- `demanda_cenario2.csv`
+- `demanda_cenario3.csv`
+- `alocacao_cenario1.csv`
 - `alocacao_cenario2.csv`
 - `alocacao_cenario3.csv`
 
@@ -55,7 +58,11 @@ python simulacao_alocacao.py
 
 ```
 .
-├── simulacao_alocacao.py     # Código principal do projeto
+├── app.py                    # Código principal do projeto
+├── demanda_cenario1.csv      # Demanda da alocação do cenário 1
+├── demanda_cenario2.csv      # Demanda da alocação do cenário 2
+├── demanda_cenario3.csv      # Demanda da alocação do cenário 3
+├── alocacao_cenario1.csv     # Resultado da alocação do cenário 1
 ├── alocacao_cenario2.csv     # Resultado da alocação do cenário 2
 ├── alocacao_cenario3.csv     # Resultado da alocação do cenário 3
 └── README.md                 # Este arquivo
@@ -63,7 +70,8 @@ python simulacao_alocacao.py
 
 ## 🧠 Base Teórica
 
-A proposta do modelo está fundamentada em literatura recente sobre justiça energética e geração distribuída no Brasil. A PLI é aplicada como uma forma de equilibrar **eficiência operacional** com **inclusão social**, conforme estudos de:
+A proposta do modelo está fundamentada em literatura recente sobre justiça energética e geração distribuída no Brasil. 
+A PLI é aplicada como uma forma de equilibrar **eficiência operacional** com **inclusão social**, conforme estudos de:
 
 - Lampis et al. (2022)
 - Oliveira (2022)

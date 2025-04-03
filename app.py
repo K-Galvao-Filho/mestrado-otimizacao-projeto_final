@@ -131,32 +131,34 @@ df_aloc1 = pd.DataFrame(aloc_1, columns=[f"T{t}" for t in range(T)])
 df_aloc1.index.name = "Unidade"
 print("\nEnergia alocada - Cenário 1:")
 print(df_aloc1)
+df_aloc1.to_csv("demanda_cenario1.csv")
 
 df_res1 = pd.DataFrame(res1, columns=[f"T{t}" for t in range(T)])
 df_res1.index.name = "Unidade"
 print("Cenário 1 - PLI sem prioridade:")
 print(df_res1)
+df_res1.to_csv("alocacao_cenario1.csv")
 
 df_aloc2 = pd.DataFrame(aloc_2, columns=[f"T{t}" for t in range(T)])
 df_aloc2.index.name = "Unidade"
 print("\nEnergia alocada - Cenário 2:")
 print(df_aloc2)
+df_aloc2.to_csv("demanda_cenario2.csv")
 
 df_res2 = pd.DataFrame(res2, columns=[f"T{t}" for t in range(T)])
 df_res2.index.name = "Unidade"
 print("Cenário 2 - PLI sem prioridade:")
 print(df_res2)
-
 df_aloc2.to_csv("alocacao_cenario2.csv")
 
 df_res3 = pd.DataFrame(res3, columns=[f"T{t}" for t in range(T)])
 df_res3.index.name = "Unidade"
 print("\nCenário 3 - PLI com prioridade:")
 print(df_res3)
+df_res3.to_csv("demanda_cenario3.csv")
 
 df_aloc3 = pd.DataFrame(aloc_3, columns=[f"T{t}" for t in range(T)])
 df_aloc3.index.name = "Unidade"
 print("\nEnergia alocada - Cenário 3:")
 print(df_aloc3)
-
 df_aloc3.to_csv("alocacao_cenario3.csv")
