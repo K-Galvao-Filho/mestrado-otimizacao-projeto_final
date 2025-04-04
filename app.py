@@ -77,9 +77,20 @@ aloc_3 = res3 * di_t
 # FUNÇÃO DE ANÁLISE
 # -----------------------------
 def analisar(aloc, nome):
+    # Energia total alocada por unidade
     energia_total = aloc.sum()
+    print(f"\nEnergia total alocada - {nome}: {energia_total}")
+    
+    # Eficiência: energia total alocada / energia total disponível
     eficiencia = energia_total / sum(Et) * 100
+    print(f"Eficiência - {nome}: {eficiencia:.2f}%")
+    
+    # Autossuficiência: energia total alocada / demanda total 
     autossuf = energia_total / di_t.sum() * 100
+    print(f"Autossuficiência - {nome}: {autossuf:.2f}%")
+    
+    # Desvio padrão: medida de equidade
+    # quanto menor o desvio padrão, mais equitativa é a alocação
     eq_std = aloc.sum(axis=1).std()
     return {
         "cenário": nome,
