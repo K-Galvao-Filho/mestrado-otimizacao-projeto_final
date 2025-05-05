@@ -1,0 +1,13 @@
+{
+    "N": 20,
+    "M": 10,
+    "B": 250000,
+    "r": 0.85,
+    "alpha": 0.3,
+    "gamma": 0.1,
+    "taxa_disponibilidade": 25,
+    "r_rede": 0.2,
+    "custo_garantia_por_kw": 100,
+    "max_units": 5,
+    "seed": 42
+  }
